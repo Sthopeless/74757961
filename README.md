@@ -23,4 +23,13 @@ MQTT_BROKER | MQTT IP
 MQTT_PORT | MQTT Port
 MQTT_USERNAME | MQTT Username
 MQTT_PASSWORD | MQTT Password
-
+  
+  
+| Endpoint Region |  Url                            |
+| :-------------- | :------------------------------ |
+| America         | https://openapi.tuyaus.com      |
+| China           | https://openapi.tuyacn.com      |
+| Europe          | https://openapi.tuyaeu.com      |
+| India           | https://openapi.tuyain.com      |
+| Eastern America | https://openapi-ueaz.tuyaus.com |
+| Western Europe  | https://openapi-weaz.tuyaeu.com |
