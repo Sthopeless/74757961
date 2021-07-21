@@ -42,7 +42,7 @@ docker run -d --name tuya_doorlock ghcr.io/sthopeless/tuya_doorlock:latest
 
 2. Exec into the container:
 ```
-docker exec -it tuya_doorlock bash
+docker run -it --name tuya_doorlock ghcr.io/sthopeless/tuya_doorlock:latest
 ```
 
 3. Edit the env.py file with your details
