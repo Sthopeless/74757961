@@ -55,4 +55,8 @@ nano /home/tuyactl/env.py
 python3 /home/tuyactl/Zigbee_Doorlock.py
 ```
 
-5. Send MQTT message to topic `TuyaLock/Doorlock` with payload `unlock_door`
+5. Send MQTT message:
+```
+  topic: TuyaLock/Doorlock
+  payload: unlock_door
+```
