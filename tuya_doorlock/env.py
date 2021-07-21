@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# online
+## iot.tuya.cloud
 ACCESS_ID = ""
 ACCESS_KEY = ""
 ## Mobile APP
@@ -9,41 +9,38 @@ PASSWORD = ""
 COUNTRY_CODE = "31"
 SCHEMA = "smartlife"
 ASSET_ID = ""
-DEVICE_ID = ""
+
 ENDPOINT = "https://openapi.tuyaeu.com"
 
 TUYA_UID = ""
 ### Devices UUID
 ZIGBEE_LOCK = ""
-WIFI_LOCK = ""
-BECK_LOCK = ""
-WIFI_SCALE = ""
 LOCKPINCODE = "123456"
 
 ### MQTT Broker
 MQTT_BROKER = ''
 MQTT_PORT = 1883
-MQTT_CLIENT_ID = 'TuyaLock'
 MQTT_USERNAME = ''
 MQTT_PASSWORD = ''
-MQTT_TOPIC = 'TuyaLock'
 
+
+
+
+
+########################################
+############# DON'T CHANGE #############
+########################################
+expired_token = "token is expired"
+MQTT_CLIENT_ID = 'TuyaLock'
+MQTT_TOPIC = 'TuyaLock'
 MQTT_ZIGBEELOCK_TOPIC = "Doorlock"
 MQTT_WIFI_SCALE_TOPIC = "WiFi_Scale"
-
 MQTT_TOPIC_CMD = "cmd"
 MQTT_TOPIC_LWT = "lwt"
 MQTT_TOPIC_STATUS = "status"
-
-### HA Autodiscovery MQTT-Topics
 HA_DISCOVERY = "false"
 HA_DISCOVERY_TOPIC = ""
 HA_DISCOVERY_MSG = ''
-
-### WiFi Scale Users_ID
-SCALE_USER_ID = '' 
-
-expired_token = "token is expired"
 DOORLOCK_TOPIC = MQTT_TOPIC + "/" + MQTT_ZIGBEELOCK_TOPIC
 DOORLOCK_TOPIC_CMD = DOORLOCK_TOPIC + "/" + MQTT_TOPIC_CMD
 DOORLOCK_TOPIC_STATUS = DOORLOCK_TOPIC + "/" + MQTT_TOPIC_STATUS

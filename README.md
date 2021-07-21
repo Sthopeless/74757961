@@ -1,5 +1,5 @@
 # Tuya Zigbee Doorlock using API
-  
+
 Install Python and the [pip requeriments are here](https://github.com/Sthopeless/74757961/blob/main/requirements.txt)  
   
   
@@ -14,7 +14,6 @@ PASSWORD    | Tuya/Smartlife MobileAPP Password
 COUNTRY_CODE | Tuya/Smartlife MobileAPP Country Code
 SCHEMA | Which MobileAPP are you using Tuya or Smartlife
 ASSET_ID | shouldn't be necessary
-DEVICE_ID | shouldn't be necessary
 ENDPOINT | Tuya url of your region (default Europe)
 TUYA_UID | Tuya user UID
 ZIGBEE_LOCK | Tuya Zigbee Doorlock UUID
@@ -33,3 +32,25 @@ MQTT_PASSWORD | MQTT Password
 | India           | https://openapi.tuyain.com      |
 | Eastern America | https://openapi-ueaz.tuyaus.com |
 | Western Europe  | https://openapi-weaz.tuyaeu.com |
+
+## Using Docker 
+
+1. Run the docker container with:
+```
+docker run -d --name tuya_doorlock ghcr.io/sthopeless/tuya_doorlock:latest
+```
+
+2. Exec into the container:
+```
+docker exec -it tuya_doorlock bash
+```
+
+3. Edit the env.py file with your details
+```
+nano /home/tuyactl/env.py
+```
+
+4. Run python file and test
+```
+python3 /home/tuyactl/Zigbee_Doorlock.py
+```
